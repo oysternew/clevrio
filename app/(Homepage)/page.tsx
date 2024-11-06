@@ -37,18 +37,19 @@ import DivAnimateY from "@/components/utils/DivAnimateY";
 import DivAnimateX from "@/components/utils/DivAnimateX";
 
 export const metadata: Metadata = {
-  title: "Clevrio - Homepage One",
-  description: "Developed By ReactTemplateBuilder",
+  title: "Clevrio - Homepage ",
+  description: "The Ultimate Course for FX and CFD Trading",
 };
 
 export const revalidate = 3600;
 
 export default async function Home() {
-  const partnerLogos: PartnerLogoType[] = await getPartnerLogos();
+  /*const partnerLogos: PartnerLogoType[] = await getPartnerLogos();
   const testimonyData: TestimonialType[] = await getTestimonyData();
   const courseData: CourseType[] = await getCourseData();
   const teamData: TeamType[] = await getTeamData();
-  const blogData: BlogType[] = await getBlogData();
+  const blogData: BlogType[] = await getBlogData();*/
+
   const introductionData: IntroductionTradingType[] =
     await introductionTrading();
 
@@ -107,7 +108,6 @@ export default async function Home() {
         );
       })}
 
-      {/*{blogData && <BlogSection showHeader endIndex={3} blogData={blogData} />}*/}
       <FooterSection />
       <FooterCopyright />
     </main>

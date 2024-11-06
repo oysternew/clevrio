@@ -42,7 +42,7 @@ const BannerSection = () => {
           <div className="col-lg-6 d-none d-lg-block">
             <div className="hero-text-img">
               <img
-                src="assets/img/HeroImage.png"
+                src="assets/img/HeroImage Clevrio.png"
                 className="img-fluid "
                 alt=""
               />
