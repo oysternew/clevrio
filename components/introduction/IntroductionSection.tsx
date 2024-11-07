@@ -4,7 +4,7 @@ import { IntroductionTradingType } from "@/types";
 type Props = {
   introductionData: IntroductionTradingType[];
 };
-export const revalidate = 5;
+export const revalidate = 360;
 const IntroductionSection: React.FC<Props> = ({ introductionData }) => {
   return (
     <section className="introduction-section">

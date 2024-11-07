@@ -1,8 +1,6 @@
-"use client";
-import { useEffect, useState } from "react";
+// TradingPsychology.tsx
 import BreadCrumbSection from "@/components/breadcrumb/BreadCrumbSection";
 import Layout from "@/components/layout/Layout";
-
 import { IntroductionTradingType } from "@/types";
 import { introductionTrading } from "@/sanity/sanity.query";
 import IntroductionSection from "@/components/introduction/IntroductionSection";
@@ -10,20 +8,12 @@ import DivAnimateY from "@/components/utils/DivAnimateY";
 
 const targetId = "b362070b-fc62-405b-ba79-84ffaf40f72d";
 
-export default function TradingPsychology() {
-  const [introductionData, setIntroductionData] =
-    useState<IntroductionTradingType | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await introductionTrading();
-      const filteredData = data.find(
-        (item: IntroductionTradingType) => item._id === targetId
-      );
-      setIntroductionData(filteredData || null);
-    };
-    fetchData();
-  }, []);
+export default async function TradingPsychology() {
+  // Fetch data directly in the component
+  const data = await introductionTrading();
+  const introductionData = data.find(
+    (item: IntroductionTradingType) => item._id === targetId
+  );
 
   return (
     <main className="Clevrio-blog-main">
