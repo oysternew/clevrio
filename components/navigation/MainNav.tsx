@@ -70,27 +70,13 @@ const MainNav = ({ mobileMenuOpen }: Props) => {
 
       {/* New menu items */}
 
-      <div className="navigacijatext  ">
-        <Link href="/#d058d5a8-17e1-423b-8b99-133386ee45c3">Introduction</Link>
-        <Link href="/#4e4a1824-cb73-4611-93f1-17e084a41a81">
-          Getting Started
-        </Link>
-
-        <Link href="/#8af0f251-e8d3-40a5-b8f3-92a647f385c3">
-          Trading Strategies
-        </Link>
-
-        <Link href="/#be389bf7-c539-4b93-bc1a-89e48ebe0714">
-          Risk Management
-        </Link>
-
-        <Link href="/#b362070b-fc62-405b-ba79-84ffaf40f72d">
-          Trading Psychology
-        </Link>
-
-        <Link href="/#77d80f18-0e1e-47e9-a656-b24c4f1226d4">
-          Trading Platforms
-        </Link>
+      <div className="navigacijatext">
+        <Link href="/introduction">Introduction</Link>
+        <Link href="/getting-started">Getting Started</Link>
+        <Link href="/trading-strategies">Trading Strategies</Link>
+        <Link href="/risk-management">Risk Management</Link>
+        <Link href="/trading-psychology">Trading Psychology</Link>
+        <Link href="/trading-platforms">Trading Platforms</Link>
       </div>
     </nav>
   );

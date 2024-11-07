@@ -10,7 +10,7 @@ const AboutSection = () => {
           <DivAnimateX position={-60} className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_img">
               <img
-                src="assets/img/about1.png"
+                src="assets/img/Image 6.png"
                 className="img-fluid"
                 alt="image"
               />
@@ -18,33 +18,33 @@ const AboutSection = () => {
           </DivAnimateX>
           <DivAnimateX className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_content">
-              <h2>We Are Providing The Online Course In Global World</h2>
+              <h2>Introduction to FX and CFD Trading </h2>
               <p>
-                We offer a brand new approach to the most basic learning
-                paradigms. Choose from a wide range of learning options and gain
-                new skills! Our school is know.
-              </p>
-              <p>
-                We offer a brand new approach to the most basic learning
-                paradigms. Choose from a wide range of learning options and gain
-                new skills! Our school is know.
+                FX (Forex) and CFD (Contract for Difference) trading are popular
+                forms of financial trading that provide individuals and
+                institutions with the opportunity to profit from price movements
+                in various financial markets. These markets offer traders the
+                potential for both short-term and long-term gains, and they are
+                accessible worldwide through online trading platforms. In this
+                section, we will delve into the fundamental concepts and
+                features of FX and CFD trading.
               </p>
               <ul>
                 <li>
-                  <span className="ti-check"></span> Get access to{" "}
-                  <b>12,000+</b> of our top courses
+                  <span className="ti-check"></span>Currency Pairs
                 </li>
                 <li>
-                  <span className="ti-check"></span> Popular topic to learn now
-                  in our online courses for student
+                  <span className="ti-check"></span> Exchange Rates
                 </li>
                 <li>
-                  <span className="ti-check"></span> Find the right instructor
-                  for you
+                  <span className="ti-check"></span> Liquidity
+                </li>
+                <li>
+                  <span className="ti-check"></span> Leverage
                 </li>
               </ul>
-              <Link className="btn_one" href="/course">
-                View All Courses <i className="ti-arrow-top-right"></i>
+              <Link className="btn_one" href="/introduction">
+                Read More <i className="ti-arrow-top-right"></i>
               </Link>
             </div>
           </DivAnimateX>

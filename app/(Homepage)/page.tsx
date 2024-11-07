@@ -35,6 +35,10 @@ import {
 import IntroductionSection from "@/components/introduction/IntroductionSection";
 import DivAnimateY from "@/components/utils/DivAnimateY";
 import DivAnimateX from "@/components/utils/DivAnimateX";
+import TradingStrategies from "@/components/tradingstrategies/TradingStrategie";
+import TradingPsychology from "@/components/tradingpsychology/Trading Psychology";
+import RiskManagement from "@/components/riskmanagement/RiskManagement";
+import TradingPlatforms from "@/components/tradingplatforms/TradingPlatforms";
 
 export const metadata: Metadata = {
   title: "Clevrio - Homepage ",
@@ -74,9 +78,34 @@ export default async function Home() {
       <HeaderSection />
       <BannerSection />
       <CounterSection />
+
       <div className=" pozadina text-center">
         Combined volume of the FX and CFD markets surpasses US$5 trillion daily
       </div>
+      <AboutSection />
+      <DivAnimateY className="container">
+        <div className="row part_bg g-2 partner_title">
+          <h3>
+            Helping <span>86,000+</span> global companies take the gloves off{" "}
+          </h3>
+        </div>
+      </DivAnimateY>
+
+      <PromoSection />
+      <DivAnimateY className="container">
+        <div className="section-title text-center">
+          <h2>Start your journey With us</h2>
+          <p>
+            We offer a brand new approach to the most basic learning paradigms.
+            Choose from a wide range of learning options and gain new skills!
+          </p>
+        </div>
+      </DivAnimateY>
+      <TradingPlatforms />
+      <div className=" pozadina text-center">Understanding Risk in Trading</div>
+      <RiskManagement />
+      <TradingStrategies />
+      <TradingPsychology />
       {/*<CategorySection style="pb-0" />
       <AboutSection />
       <CategorySection2 />
@@ -87,7 +116,7 @@ export default async function Home() {
       <PromoSection />
       {testimonyData && (
         <TestimonySection style="pb-0" testimonyData={testimonyData} />
-      )}*/}
+      )}
       {orderedIds.map((id, index) => {
         const data = dataById[id];
         return (
@@ -106,7 +135,7 @@ export default async function Home() {
             </div>
           ))
         );
-      })}
+      })}*/}
 
       <FooterSection />
       <FooterCopyright />

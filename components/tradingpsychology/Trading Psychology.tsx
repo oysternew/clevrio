@@ -3,37 +3,36 @@ import React from "react";
 import DivAnimateX from "../utils/DivAnimateX";
 import NumberCounter from "../utils/NumberCounter";
 
-const PromoSection = () => {
+const TradingPsychology = () => {
   return (
     <section className="ab_area section-padding overflow-hidden">
       <div className="container">
         <div className="row g-4">
           <DivAnimateX position={-60} className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_content">
-              <h2>Getting Started</h2>
+              <h2>Psychology of Trading</h2>
               <p>
-                Whether you're a novice trader or looking to expand your
-                financial knowledge, these fundamental steps will set you on the
-                path to becoming a proficient traderion, we will delve into the
-                fundamental concepts and features of FX and CFD trading.
+                The "Psychology of Trading" section in a Forex and CFD trading
+                tutorial typically explores the mental and emotional aspects
+                that significantly impact trading performance.
               </p>
               <ul>
                 <li>
-                  <span className="ti-check"></span> Setting Up Your Trading
-                  Account
+                  <span className="ti-check"></span> Understanding Emotional
+                  Influences
                 </li>
                 <li>
-                  <span className="ti-check"></span> Choosing Your Trading
-                  Platform
+                  <span className="ti-check"></span> Impact of Stress and
+                  Anxiety
                 </li>
                 <li>
-                  <span className="ti-check"></span>Learning the Basics
+                  <span className="ti-check"></span>The Role of Discipline
                 </li>
                 <li>
-                  <span className="ti-check"></span>Placing Your First Trade
+                  <span className="ti-check"></span>Mindset and Attitude
                 </li>
               </ul>
-              <Link className="btn_one" href="/getting-started">
+              <Link className="btn_one" href="/trading-psychology">
                 Read More <i className="ti-arrow-top-right"></i>
               </Link>
             </div>
@@ -41,7 +40,7 @@ const PromoSection = () => {
           <DivAnimateX className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_img">
               <img
-                src="assets/img/Image 2.png"
+                src="assets/img/Image 1.png"
                 className="img-fluid"
                 alt="image"
               />
@@ -58,4 +57,4 @@ const PromoSection = () => {
   );
 };
 
-export default PromoSection;
+export default TradingPsychology;
