@@ -45,8 +45,6 @@ export const metadata: Metadata = {
   description: "The Ultimate Course for FX and CFD Trading",
 };
 
-export const revalidate = 3600;
-
 export default async function Home() {
   /*const partnerLogos: PartnerLogoType[] = await getPartnerLogos();
   const testimonyData: TestimonialType[] = await getTestimonyData();
