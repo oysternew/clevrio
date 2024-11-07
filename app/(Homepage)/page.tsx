@@ -39,6 +39,7 @@ import TradingStrategies from "@/components/tradingstrategies/TradingStrategie";
 import TradingPsychology from "@/components/tradingpsychology/Trading Psychology";
 import RiskManagement from "@/components/riskmanagement/RiskManagement";
 import TradingPlatforms from "@/components/tradingplatforms/TradingPlatforms";
+import ImportanceOfFXAndCFDTradingTutorial from "@/components/intfxandcdf/importanceFx";
 
 export const metadata: Metadata = {
   title: "Clevrio - Homepage ",
@@ -104,6 +105,7 @@ export default async function Home() {
       <RiskManagement />
       <TradingStrategies />
       <TradingPsychology />
+      <ImportanceOfFXAndCFDTradingTutorial />
       {/*<CategorySection style="pb-0" />
       <AboutSection />
       <CategorySection2 />

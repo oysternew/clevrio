@@ -45,7 +45,7 @@ const TradingPlatforms = () => {
               />
               <div className="home_ps2">
                 <span className="ti-book"></span>
-                <NumberCounter number={3300} durationToComplete={3} icon="+" />
+                <NumberCounter number={9978} durationToComplete={3} icon="+" />
                 <p>Users</p>
               </div>
             </div>

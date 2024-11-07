@@ -6,7 +6,7 @@ import IntroductionSection from "@/components/introduction/IntroductionSection";
 import DivAnimateY from "@/components/utils/DivAnimateY";
 
 const targetId = "d058d5a8-17e1-423b-8b99-133386ee45c3";
-
+export const revalidate = 300;
 export default async function Home() {
   // Fetch data directly in the component
   const data = await introductionTrading();
