@@ -92,7 +92,7 @@ export default async function Home() {
         </div>
       </DivAnimateY>
       <DivAnimateX className="container mt-5">
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
+        <div className="d-flex  justify-content-center align-items-center ">
           <a
             href="https://capitalrevo.com/"
             target="_blank"
@@ -104,19 +104,6 @@ export default async function Home() {
               width={600}
               height={200}
               className="img-fluid rounded-lg shadow"
-            />
-          </a>
-          <a
-            href="https://capitalrevo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/img/CR AI-01.png"
-              alt="CR Trading slika"
-              width={600}
-              height={200}
-              className="img-fluid rounded-lg shadow d-none d-md-block"
             />
           </a>
         </div>
@@ -139,7 +126,7 @@ export default async function Home() {
       <TradingPsychology />
       <DivAnimateX className="container   mb-5 ">
         {" "}
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-5 ">
+        <div className="d-flex  justify-content-center align-items-center  ">
           <a
             href="https://capitalrevo.com/news"
             target="_blank"
@@ -151,20 +138,6 @@ export default async function Home() {
               width={600}
               height={200}
               className="img-fluid rounded-lg shadow"
-            />
-          </a>
-
-          <a
-            href="https://capitalrevo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/img/CR Trading-01.png"
-              alt="CR Trading slika"
-              width={600}
-              height={200}
-              className="img-fluid rounded-lg shadow d-none d-md-block"
             />
           </a>
         </div>
