@@ -40,6 +40,8 @@ import TradingPsychology from "@/components/tradingpsychology/Trading Psychology
 import RiskManagement from "@/components/riskmanagement/RiskManagement";
 import TradingPlatforms from "@/components/tradingplatforms/TradingPlatforms";
 import ImportanceOfFXAndCFDTradingTutorial from "@/components/intfxandcdf/importanceFx";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Clevrio - Homepage ",
@@ -89,6 +91,36 @@ export default async function Home() {
           </h3>
         </div>
       </DivAnimateY>
+      <DivAnimateX className="container mt-5">
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
+          <a
+            href="https://capitalrevo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/img/CR Trading 2-01.png"
+              alt="CR Trading slika"
+              width={600}
+              height={200}
+              className="img-fluid rounded-lg shadow"
+            />
+          </a>
+          <a
+            href="https://capitalrevo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/img/CR AI-01.png"
+              alt="CR Trading slika"
+              width={600}
+              height={200}
+              className="img-fluid rounded-lg shadow d-none d-md-block"
+            />
+          </a>
+        </div>
+      </DivAnimateX>
 
       <PromoSection />
       <DivAnimateY className="container">
@@ -105,6 +137,38 @@ export default async function Home() {
       <RiskManagement />
       <TradingStrategies />
       <TradingPsychology />
+      <DivAnimateX className="container   mb-5 ">
+        {" "}
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-5 ">
+          <a
+            href="https://capitalrevo.com/news"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/img/CR News-01.png"
+              alt="CR News slika"
+              width={600}
+              height={200}
+              className="img-fluid rounded-lg shadow"
+            />
+          </a>
+
+          <a
+            href="https://capitalrevo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/img/CR Trading-01.png"
+              alt="CR Trading slika"
+              width={600}
+              height={200}
+              className="img-fluid rounded-lg shadow d-none d-md-block"
+            />
+          </a>
+        </div>
+      </DivAnimateX>
       <ImportanceOfFXAndCFDTradingTutorial />
       {/*<CategorySection style="pb-0" />
       <AboutSection />

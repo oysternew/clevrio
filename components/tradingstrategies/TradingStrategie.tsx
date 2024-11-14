@@ -10,7 +10,7 @@ const TradingStrategies = () => {
           <DivAnimateX position={-60} className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_img">
               <img
-                src="assets/img/Image 7.png"
+                src="assets/img/Image 2.png"
                 className="img-fluid"
                 alt="image"
               />
