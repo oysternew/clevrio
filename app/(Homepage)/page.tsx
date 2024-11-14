@@ -80,18 +80,18 @@ export default async function Home() {
       <BannerSection />
       <CounterSection />
 
-      <div className=" pozadina text-center">
+      <div className="  pozadina text-center">
         Combined volume of the FX and CFD markets surpasses US$5 trillion daily
       </div>
       <AboutSection />
-      <DivAnimateY className="container">
+      <DivAnimateY className="container section-padding">
         <div className="row part_bg g-2 partner_title">
           <h3>
             Helping <span>86,000+</span> global companies take the gloves off{" "}
           </h3>
         </div>
       </DivAnimateY>
-      <DivAnimateX className="container mt-5">
+      <DivAnimateX className="container section-padding">
         <div className="d-flex  justify-content-center align-items-center ">
           <a
             href="https://capitalrevo.com/"
@@ -110,8 +110,8 @@ export default async function Home() {
       </DivAnimateX>
 
       <PromoSection />
-      <DivAnimateY className="container">
-        <div className="section-title text-center">
+      <DivAnimateY className="container section-padding">
+        <div className="ab_content section-title text-center">
           <h2>Start your journey With us</h2>
           <p>
             We offer a brand new approach to the most basic learning paradigms.
@@ -120,11 +120,31 @@ export default async function Home() {
         </div>
       </DivAnimateY>
       <TradingPlatforms />
-      <div className=" pozadina text-center">Understanding Risk in Trading</div>
+      <div className="  pozadina text-center">
+        Understanding Risk in Trading
+      </div>
       <RiskManagement />
       <TradingStrategies />
+      <DivAnimateX className="container section-padding  ">
+        {" "}
+        <div className="d-flex  justify-content-center align-items-center  ">
+          <a
+            href="https://capitalrevo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/img/CR AI-01.png"
+              alt="CR News slika"
+              width={600}
+              height={200}
+              className="img-fluid rounded-lg shadow"
+            />
+          </a>
+        </div>
+      </DivAnimateX>
       <TradingPsychology />
-      <DivAnimateX className="container   mb-5 ">
+      <DivAnimateX className="container  section-padding">
         {" "}
         <div className="d-flex  justify-content-center align-items-center  ">
           <a
