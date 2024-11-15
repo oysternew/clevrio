@@ -5,6 +5,7 @@ import { IntroductionTradingType } from "@/types";
 import { introductionTrading } from "@/sanity/sanity.query";
 import IntroductionSection from "@/components/introduction/IntroductionSection";
 import DivAnimateY from "@/components/utils/DivAnimateY";
+import DivAnimateX from "@/components/utils/DivAnimateX";
 
 const targetId = "4e4a1824-cb73-4611-93f1-17e084a41a81";
 export const revalidate = 300;
@@ -22,6 +23,7 @@ export default async function GettingStarted() {
           currentPage="Getting Started"
           headerText="Setting Up"
         />
+
         <div>
           {introductionData && (
             <div id={introductionData._id} className="section-offset">
@@ -31,6 +33,23 @@ export default async function GettingStarted() {
             </div>
           )}
         </div>
+        <DivAnimateX className="container section-padding">
+          <div className="d-flex container  justify-content-center align-items-center ">
+            <a
+              href="https://capitalrevo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/img/CR Trading 2-01.png"
+                alt="CR Trading slika"
+                width={600}
+                height={200}
+                className="img-fluid rounded-lg shadow"
+              />
+            </a>
+          </div>
+        </DivAnimateX>
       </Layout>
     </main>
   );

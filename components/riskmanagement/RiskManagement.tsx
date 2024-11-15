@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import DivAnimateX from "../utils/DivAnimateX";
-import NumberCounter from "../utils/NumberCounter";
 
 const RiskManagement = () => {
   return (
