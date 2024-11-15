@@ -92,7 +92,7 @@ export default async function Home() {
         </div>
       </DivAnimateY>
       <DivAnimateX className="container section-padding">
-        <div className="d-flex  justify-content-center align-items-center ">
+        <div className="d-flex container  justify-content-center align-items-center ">
           <a
             href="https://capitalrevo.com/"
             target="_blank"
@@ -127,7 +127,7 @@ export default async function Home() {
       <TradingStrategies />
       <DivAnimateX className="container section-padding  ">
         {" "}
-        <div className="d-flex  justify-content-center align-items-center  ">
+        <div className="d-flex container  justify-content-center align-items-center  ">
           <a
             href="https://capitalrevo.com/"
             target="_blank"
@@ -146,7 +146,7 @@ export default async function Home() {
       <TradingPsychology />
       <DivAnimateX className="container  section-padding">
         {" "}
-        <div className="d-flex  justify-content-center align-items-center  ">
+        <div className="d-flex container  justify-content-center align-items-center  ">
           <a
             href="https://capitalrevo.com/news"
             target="_blank"
