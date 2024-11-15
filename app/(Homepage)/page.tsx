@@ -80,12 +80,12 @@ export default async function Home() {
       <BannerSection />
       <CounterSection />
 
-      <div className="  pozadina text-center">
+      <div className=" container  pozadina text-center">
         Combined volume of the FX and CFD markets surpasses US$5 trillion daily
       </div>
       <AboutSection />
       <DivAnimateY className="container section-padding">
-        <div className="row part_bg g-2 partner_title">
+        <div className="container  row part_bg g-2 partner_title">
           <h3>
             Helping <span>86,000+</span> global companies take the gloves off{" "}
           </h3>
@@ -120,7 +120,7 @@ export default async function Home() {
         </div>
       </DivAnimateY>
       <TradingPlatforms />
-      <div className="  pozadina text-center">
+      <div className=" container  pozadina text-center">
         Understanding Risk in Trading
       </div>
       <RiskManagement />
