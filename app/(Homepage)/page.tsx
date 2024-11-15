@@ -111,7 +111,7 @@ export default async function Home() {
 
       <PromoSection />
       <DivAnimateY className="container section-padding">
-        <div className="ab_content section-title text-center">
+        <div className="container  ab_content section-title text-center">
           <h2>Start your journey With us</h2>
           <p>
             We offer a brand new approach to the most basic learning paradigms.
