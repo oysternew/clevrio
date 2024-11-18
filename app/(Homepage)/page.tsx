@@ -91,23 +91,6 @@ export default async function Home() {
           </h3>
         </div>
       </DivAnimateY>
-      <DivAnimateX className="container section-padding">
-        <div className="d-flex container  justify-content-center align-items-center ">
-          <a
-            href="https://capitalrevo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/img/CR Trading 2-01.png"
-              alt="CR Trading slika"
-              width={600}
-              height={200}
-              className="img-fluid rounded-lg shadow"
-            />
-          </a>
-        </div>
-      </DivAnimateX>
 
       <PromoSection />
       <DivAnimateY className="container section-padding">
@@ -125,43 +108,9 @@ export default async function Home() {
       </div>
       <RiskManagement />
       <TradingStrategies />
-      <DivAnimateX className="container section-padding  ">
-        {" "}
-        <div className="d-flex container  justify-content-center align-items-center  ">
-          <a
-            href="https://capitalrevo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/img/CR AI-01.png"
-              alt="CR News slika"
-              width={600}
-              height={200}
-              className="img-fluid rounded-lg shadow"
-            />
-          </a>
-        </div>
-      </DivAnimateX>
+
       <TradingPsychology />
-      <DivAnimateX className="container  section-padding">
-        {" "}
-        <div className="d-flex container  justify-content-center align-items-center  ">
-          <a
-            href="https://capitalrevo.com/news"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/img/CR News-01.png"
-              alt="CR News slika"
-              width={600}
-              height={200}
-              className="img-fluid rounded-lg shadow"
-            />
-          </a>
-        </div>
-      </DivAnimateX>
+
       <ImportanceOfFXAndCFDTradingTutorial />
       {/*<CategorySection style="pb-0" />
       <AboutSection />

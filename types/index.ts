@@ -85,3 +85,16 @@ export type IntroductionTradingType = {
   conclusion: string; // Zaključak
   conclusionText: string; // Tekst ispod zaključka
 };
+export type BanerPrviType = {
+  _id: string; // ID dokumenta
+  title: string; // Naslov sekcije
+  content: string; // Glavni tekst sekcije
+  list: string[]; // Lista stavki (npr. Currency Pairs, Exchange Rates, itd.)
+  image: {
+    asset: {
+      url: string; // URL slike
+    };
+  };
+  link: string; // Tekst za link (npr. "Read More")
+  linkUrl: string; // URL za "Read More" link
+};

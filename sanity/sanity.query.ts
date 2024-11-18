@@ -94,3 +94,21 @@ export async function introductionTrading() {
     }`
   );
 }
+export async function fetchBanerPrvi() {
+  return client.fetch(
+    groq`*[_type == "banerPrvi"] {
+      _id,
+      title,
+      content,
+      list[], // Directly fetch the list items as strings
+      image {
+        asset -> {
+          url
+        }
+      },
+      link,
+      linkUrl
+    }`
+  );
+}
+

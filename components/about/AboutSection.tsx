@@ -1,50 +1,59 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import React from "react";
+
 import DivAnimateX from "../utils/DivAnimateX";
 
+// Definišemo tip podataka iz Sanity sheme
+import { BanerPrviType } from "@/types";
+import { fetchBanerPrvi } from "@/sanity/sanity.query";
+
 const AboutSection = () => {
+  const [banerPrviData, setBanerPrviData] = useState<BanerPrviType | null>(
+    null
+  );
+
+  // Fetch podataka kada se komponenta mounta
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetchBanerPrvi();
+      setBanerPrviData(data[0]); // Pretpostavljamo da uzimamo samo prvi baner
+    };
+    getData();
+  }, []);
+
+  if (!banerPrviData) return <div>Loading...</div>; // Ako podaci nisu učitani
+
   return (
     <section className="ab_area section-padding overflow-hidden">
       <div className="container">
         <div className="row g-4">
+          {/* Prikaz slike */}
           <DivAnimateX position={-60} className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_img">
               <img
-                src="assets/img/Image 6.png"
+                src={banerPrviData.image.asset.url} // Prikazivanje slike iz Sanity
                 className="img-fluid"
                 alt="image"
               />
             </div>
           </DivAnimateX>
+
+          {/* Prikaz teksta, liste i linka */}
           <DivAnimateX className="col-lg-6 col-sm-12 col-xs-12">
             <div className="ab_content">
-              <h2>Introduction to FX and CFD Trading </h2>
-              <p>
-                FX (Forex) and CFD (Contract for Difference) trading are popular
-                forms of financial trading that provide individuals and
-                institutions with the opportunity to profit from price movements
-                in various financial markets. These markets offer traders the
-                potential for both short-term and long-term gains, and they are
-                accessible worldwide through online trading platforms. In this
-                section, we will delve into the fundamental concepts and
-                features of FX and CFD trading.
-              </p>
+              <h2>{banerPrviData.title}</h2>
+              <p>{banerPrviData.content}</p>
               <ul>
-                <li>
-                  <span className="ti-check"></span>Currency Pairs
-                </li>
-                <li>
-                  <span className="ti-check"></span> Exchange Rates
-                </li>
-                <li>
-                  <span className="ti-check"></span> Liquidity
-                </li>
-                <li>
-                  <span className="ti-check"></span> Leverage
-                </li>
+                {banerPrviData.list.map((item, index) => (
+                  <li key={index}>
+                    <span className="ti-check"></span>
+                    {item || "No data available"}
+                  </li>
+                ))}
               </ul>
-              <Link className="btn_one" href="/introduction">
-                Read More <i className="ti-arrow-top-right"></i>
+              <Link className="btn_one" href={banerPrviData.linkUrl}>
+                {banerPrviData.link} <i className="ti-arrow-top-right"></i>
               </Link>
             </div>
           </DivAnimateX>

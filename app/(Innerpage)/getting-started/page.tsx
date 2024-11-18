@@ -33,23 +33,6 @@ export default async function GettingStarted() {
             </div>
           )}
         </div>
-        <DivAnimateX className="container section-padding">
-          <div className="d-flex container  justify-content-center align-items-center ">
-            <a
-              href="https://capitalrevo.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="assets/img/CR Trading 2-01.png"
-                alt="CR Trading slika"
-                width={600}
-                height={200}
-                className="img-fluid rounded-lg shadow"
-              />
-            </a>
-          </div>
-        </DivAnimateX>
       </Layout>
     </main>
   );
