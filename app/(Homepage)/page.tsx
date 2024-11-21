@@ -42,6 +42,7 @@ import TradingPlatforms from "@/components/tradingplatforms/TradingPlatforms";
 import ImportanceOfFXAndCFDTradingTutorial from "@/components/intfxandcdf/importanceFx";
 import Image from "next/image";
 import Link from "next/link";
+import AdBanner from "@/components/adserver/AdBanner";
 
 export const metadata: Metadata = {
   title: "Clevrio - Homepage ",
@@ -91,6 +92,9 @@ export default async function Home() {
           </h3>
         </div>
       </DivAnimateY>
+      <div className="container   ">
+        <AdBanner />
+      </div>
 
       <PromoSection />
       <DivAnimateY className="container section-padding">
