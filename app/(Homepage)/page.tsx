@@ -92,9 +92,9 @@ export default async function Home() {
           </h3>
         </div>
       </DivAnimateY>
-      <div className="container   ">
+      {/* <div className="container   ">
         <AdBanner />
-      </div>
+      </div>*/}
 
       <PromoSection />
       <DivAnimateY className="container section-padding">

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const AdbBanner: React.FC = () => {
-  const randomNumber = Math.random(); // Generišite slučajan broj
+  const randomNumber = Math.floor(Math.random() * 10000) + 1;
   const adId = "aedb2ba7";
   const zoneId = "8";
 
