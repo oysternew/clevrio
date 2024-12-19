@@ -1,8 +1,8 @@
 import { defineType } from 'sanity';
 
 export default defineType({
-  name: 'banerPrvi', // Naziv sheme
-  title: 'Baner Prvi',
+  name: 'semaStranice', // Naziv sheme
+  title: 'Sema Stranice',
   type: 'document',
   fields: [
     {

@@ -98,3 +98,18 @@ export type BanerPrviType = {
   link: string; // Tekst za link (npr. "Read More")
   linkUrl: string; // URL za "Read More" link
 };
+export type SemaStraniceType ={
+
+  _id: string; 
+  title: string; 
+  content: string; 
+  list: string[]; 
+  image: {
+    asset: {
+      url: string; // URL slike
+    };
+  };
+  link: string; 
+  linkUrl: string; 
+
+};
