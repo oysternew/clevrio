@@ -6,12 +6,17 @@ export default defineType({
   type: 'document',
   fields: [
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image', // Tip za unos slike
-      options: {
-        hotspot: true, // Omogućava odabir dela slike
-      },
+      name: 'images', // Promenjeno ime polja u 'images'
+      title: 'Images',
+      type: 'array', // Tip niza za više slika
+      of: [
+        {
+          type: 'image', // Tip za unos slike
+          options: {
+            hotspot: true, // Omogućava odabir dela slike
+          },
+        },
+      ],
     },
     {
       name: 'title',
@@ -42,16 +47,6 @@ export default defineType({
       name: 'link',
       title: 'Link Text',
       type: 'string', // Tekst linka
-    },
-    {
-      name: 'list2',
-      title: 'List Items',
-      type: 'array',
-      of: [
-        {
-          type: 'string', // Lista stavki u tekstu
-        },
-      ],
     },
     {
       name: 'linkUrl',
