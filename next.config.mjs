@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['dxp.onreman.tech'], // Dodajte ovde domen
-    },
-  };
-  
-  export default nextConfig; // Ispravna sintaksa za ES module
+  images: {
+      remotePatterns: [
+          {
+              protocol: 'https',
+              hostname: 'dxp.onreman.tech',
+              port: '', // Ostavite prazno ako ne koristite port
+              pathname: '/**', // Možete prilagoditi putanju ako je potrebno
+          },
+      ],
+  },
+};
+
+export default nextConfig; // Ispravna sintaksa za ES module

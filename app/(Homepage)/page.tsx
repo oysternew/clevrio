@@ -43,6 +43,7 @@ import ImportanceOfFXAndCFDTradingTutorial from "@/components/intfxandcdf/import
 import Image from "next/image";
 import Link from "next/link";
 import AdBanner from "@/components/adserver/AdBanner";
+import IframeWithHTML from "@/components/adserver/IframeWithHTML";
 
 export const metadata: Metadata = {
   title: "Clevrio - Homepage ",
@@ -84,6 +85,7 @@ export default async function Home() {
       <div className=" container  pozadina text-center">
         Combined volume of the FX and CFD markets surpasses US$5 trillion daily
       </div>
+
       <AboutSection />
       <DivAnimateY className="container section-padding">
         <div className="container  row part_bg g-2 partner_title">
@@ -92,9 +94,6 @@ export default async function Home() {
           </h3>
         </div>
       </DivAnimateY>
-      {/* <div className="container   ">
-        <AdBanner />
-      </div>*/}
 
       <PromoSection />
       <DivAnimateY className="container section-padding">
