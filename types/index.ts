@@ -98,18 +98,27 @@ export type BanerPrviType = {
   link: string; // Tekst za link (npr. "Read More")
   linkUrl: string; // URL za "Read More" link
 };
-export type SemaStraniceType ={
-
-  _id: string; 
-  title: string; 
-  content: string; 
-  list: string[]; 
-  image: {
-    asset: {
-      url: string; // URL slike
-    };
+export type SemaStraniceType = {
+  title: string; // Naslov stranice
+  slug: {
+    _type: 'slug'; // Sanity-jev tip za slug
+    current: string; // Vrednost sluga (npr. "naslov-stranice")
   };
-  link: string; 
-  linkUrl: string; 
-
+  images: string[]; // Niz URL-ova slika
+  content: Array<{
+    _key: string; // Jedinstveni ključ za blok
+    _type: string; // Tip bloka (npr. "block")
+    children: Array<{
+      _key: string; // Jedinstveni ključ za dete
+      _type: string; // Tip (npr. "span")
+      text: string; // Tekst unutar bloka
+    }>;
+    style?: string; // Stil bloka (npr. "normal", "h1")
+  }>; // Blok sadržaj
+  list: string[]; // Lista stavki
+  link: string; // Tekst linka
+  linkUrl: string; // URL linka
 };
+
+
+

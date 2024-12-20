@@ -5,9 +5,24 @@ export default defineType({
   title: 'Sema Stranice',
   type: 'document',
   fields: [
+    
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string', // Naslov sekcije
+    },
+    {
+      name: 'slug', // Dodato polje za slug
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title', // Automatsko generisanje sluga na osnovu naslova
+        maxLength: 200, // Maksimalna dužina sluga
+      },
+    },
     {
       name: 'images', // Promenjeno ime polja u 'images'
-      title: 'Images',
+      title: 'Images', 
       type: 'array', // Tip niza za više slika
       of: [
         {
@@ -19,12 +34,7 @@ export default defineType({
       ],
     },
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string', // Naslov sekcije
-    },
-    {
-      name: 'content',
+      name: 'content', 
       title: 'Content',
       type: 'array', // Promenjeno na 'array' da bi se koristio 'block' tip
       of: [
@@ -51,7 +61,7 @@ export default defineType({
     {
       name: 'linkUrl',
       title: 'Link URL',
-      type: 'url', // URL linka
+      type: 'url',
     },
   ],
 });

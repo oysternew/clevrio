@@ -114,17 +114,21 @@ export async function fetchBanerPrvi() {
 export async function fetchsemaStranice(){
   return client.fetch(
     groq`*[_type == "semaStranice"] {
-    _id,
-    title,
-    content,
-    list[],
-    image{
-    asset-> {
-    url}},
-    link,
-      linkUrl
+  title,
+  slug,     
+  "images": images[].asset->url, 
+  content,      
+  list,          
+  link,         
+  linkUrl       
+}`
+  );
+}
 
-
+export async function fetchSlugs() {
+  return client.fetch(
+    groq`*[_type == "semaStranice"] {
+      slug
     }`
   );
 }
