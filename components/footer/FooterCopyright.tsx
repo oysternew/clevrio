@@ -4,7 +4,7 @@ const FooterCopyright = () => {
   return (
     <div className="foot_copy">
       <div className="footer_copyright">
-        <p>&copy; {new Date().getFullYear()}. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear() || "2025"}. All Rights Reserved.</p>
       </div>
     </div>
   );
