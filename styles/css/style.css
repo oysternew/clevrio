@@ -382,14 +382,14 @@ ul {
 
 #main-menu ul li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 10px;
   position: relative;
   line-height: 60px;
 }
 
 #main-menu ul li a {
   position: relative;
-  text-transform: uppercase;
+
   color: #0b104a;
   font-weight: 600;
   transition: 0.5s;
