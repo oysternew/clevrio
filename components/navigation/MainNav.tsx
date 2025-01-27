@@ -70,14 +70,50 @@ const MainNav = ({ mobileMenuOpen }: Props) => {
 
       {/* New menu items */}
 
-      <div className="navigacijatext">
-        <Link href="/introduction">Introduction</Link>
-        <Link href="/getting-started">Getting Started</Link>
-        <Link href="/trading-strategies">Trading Strategies</Link>
-        <Link href="/risk-management">Risk Management</Link>
-        <Link href="/trading-psychology">Trading Psychology</Link>
-        <Link href="/trading-platforms">Trading Platforms</Link>
-      </div>
+      <ul className="main-nav-items">
+        <li>
+          <Link href="/introduction">Introduction to Trading</Link>
+          <ul
+            className={`subdropdown-menu ${activeNav === "home" ? "show" : ""}`}
+          >
+            <li>
+              <Link href="/introduction/ultimate-goal-oftrading">
+                Ultimate Goal of Trading
+              </Link>
+            </li>
+            <li>
+              <Link href="/introduction/understanding-fX(forex)-Trading">
+                Understanding FX (Forex) Trading
+              </Link>
+            </li>
+            <li>
+              <Link href="/introduction/key-Concepts-of-FX-Trading">
+                Key Concepts of FX Trading
+              </Link>
+            </li>
+            <li>
+              <Link href="/introduction/exploring-Forex-Trading-Opportunities">
+                Exploring Forex Trading Opportunities
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <Link href="/getting-started">Getting Started</Link>
+        </li>
+        <li>
+          <Link href="/trading-strategies">Trading Strategies</Link>
+        </li>
+        <li>
+          <Link href="/risk-management">Risk Management</Link>
+        </li>
+        <li>
+          <Link href="/trading-psychology">Trading Psychology</Link>
+        </li>
+        <li>
+          <Link href="/trading-platforms">Trading Platforms</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
